@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Munsif-Ali/Frontend-Mentor-Product-preview-card-component-challenge)
-- Live Site URL: [Add live site URL here](https://munsif-ali.github.io/Frontend-Mentor-Product-preview-card-component-challenge/)
+- Solution URL: [Add solution URL here](https://github.com/Munsif-Ali/Frontend-Mentor---Results-summary-component)
+- Live Site URL: [Add live site URL here](https://munsif-ali.github.io/Frontend-Mentor---Results-summary-component/)
 
 ## My process
 
