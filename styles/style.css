@@ -1,0 +1,227 @@
+:root {
+    /* gradients colors */
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+
+    /* summary colors */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+
+    --Light-red-trans: hsla(0, 100%, 67%, 0.1);
+    --Orangey-yellow-trans: hsla(39, 100%, 56%, 0.1);
+    --Green-teal-trans: hsla(166, 100%, 37%, 0.1);
+    --Cobalt-blue-trans: hsla(234, 85%, 45%, 0.1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 15%;
+    background: linear-gradient(var(--Light-slate-blue-background) 0%, var(--Light-royal-blue-background) 100%);
+    border-radius: 0 0 30px 30px;
+    color: #c1b5ff;
+
+}
+
+.summary-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 10px;
+}
+
+.card-header .marks-component {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--Violet-blue-circle) 0%, var(--Persian-blue-circle) 100%);
+}
+
+.card-header .marks-component .obtained-marks {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 800;
+}
+
+.card-header .remarks {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 800;
+}
+
+.card-body {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.summary {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+.summary-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.summary-item-value {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    color: black;
+    padding-right: 1rem;
+}
+
+.summary-item .summary-item-obtained-value {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+}
+
+.summary-item i {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.summary-item-max-value {
+    color: #7c7c7c;
+}
+
+
+.summary-item:nth-child(2) {
+    background-color: var(--Light-red-trans);
+    color: var(--Light-red);
+    border-radius: 10px;
+
+}
+
+.summary-item:nth-child(3) {
+    background-color: var(--Orangey-yellow-trans);
+    color: var(--Orangey-yellow);
+}
+
+
+
+.summary-item:nth-child(4) {
+    background-color: var(--Green-teal-trans);
+    color: var(--Green-teal);
+}
+
+.summary-item:nth-child(5) {
+    background-color: var(--Cobalt-blue-trans);
+    color: var(--Cobalt-blue);
+}
+
+.c-a-t {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.c-a-t:hover {
+    background: linear-gradient(var(--Light-slate-blue-background) 0%, var(--Light-royal-blue-background) 100%);
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 600px) {
+    body {
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .card {
+        flex-direction: row;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        height: 550px;
+        min-width: 550px;
+        max-width: 700px;
+        border-radius: 30px;
+    }
+
+    .card .card-header {
+        width: 50%;
+        height: 100%;
+        border-radius: 30px;
+        padding: 20px 5%;
+    }
+
+
+    .card .card-body {
+        width: 50%;
+        height: 100%;
+        padding: 1.5rem;
+    }
+
+    .card .card-body .summary-item {
+        width: 100%;
+    }
+
+    .card .marks-component {
+        width: 200px;
+        height: 200px;
+    }
+
+
+}
