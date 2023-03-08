@@ -305,7 +305,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    margin: 2.5rem 0 0 0;
     padding: 1rem;
     color: white;
     background-color: black;
@@ -340,9 +340,16 @@ body {
         width: 50%;
         height: 100%;
         border-radius: 30px;
+        font-size: 1.5rem;
+        font-weight: 700;
         padding: 20px 5%;
+        text-align: center;
     }
 
+    .card .card-header p {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
 
     .card .card-body {
         width: 50%;
